@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <form action="#" method="get">
+        <div>
+            <label for="name">
+                고객명: <input type='text' id="name">
+            </label>
+        </div>
+        <div>
+            <label for="phone">전화번호: <input type='text' id="phone"></label>
+        </div>
+        <div>
+            <label for="email">E-mail: <input type='email' id="email">
+            </label>
+        </div>
+
+        <div>
+            피자 선택:
+            <select name="pizza">
+                <option value="">피자를 선택하세요</option>
+                <option value="치즈 퐁듀 파이어 미트">치즈 퐁듀 파이어 미트</option>
+                <option value="블록버스터4">블록버스터4</option>
+                <option value="글로벌 레전드4">글로벌 레전드4</option>
+                <option value="블랙엥거스 스테이크">블랙엥거스 스테이크</option>
+            </select>
+        </div>
+        <fieldset>
+            <legend>피자 사이즈</legend>
+            <div><label for="size1"><input type="checkbox" name="size" id="size1" value="small">small</label></div>
+            <div><label for="size2"><input type="checkbox" name="size" id="size2" value="medium">medium</label></div>
+            <div><label for="size3"><input type="checkbox" name="size" id="size3" value="large">large</label></div>
+        </fieldset>
+        <fieldset>
+            <legend>토핑 선택</legend>
+            <div><label for="t1"><input type="checkbox" name="topping" value="베이컨" id="t1">베이컨</label></div>
+            <div><label for="t2"><input type="checkbox" name="topping" value="치즈" id="t2">치즈</label></div>
+            <div><label for="t3"><input type="checkbox" name="topping" value="양파" id="t3">양파</label></div>
+            <div><label for="t4"><input type="checkbox" name="topping" value="버섯" id="t4">버섯</label></div>
+        </fieldset>
+        <div>
+            희망 배송 시간: <input type="time" name="time">
+        </div>
+        <div>
+            배송시 요청사항:<textarea name="memo"></textarea>
+        </div>
+
+
+        <input type="submit" value="주문하기" />
+    </form>
+</body>
+
+</html>
